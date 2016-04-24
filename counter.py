@@ -14,5 +14,10 @@ def wordCounter(filename):
     ans = "\tTotal words: " + str(wordCount) + "\n\tTotal characters: " + str(charCount)
     return ans
 
-### Test Cases ###
-#print(wordCounter(argv[0]))
+def main():
+    filename = in.next()
+    wordCounter(filename)
+
+if __name__ == '__main__':
+    main()
+    
