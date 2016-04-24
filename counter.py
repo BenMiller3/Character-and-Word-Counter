@@ -4,6 +4,7 @@ within a text file
 By: Benjamin D. Miller
 """
 import sys
+import os
 
 def wordCounter(filename):
     wordCount = 0
@@ -23,6 +24,10 @@ Checks it is a valid filename and then counts
 def main():
     if len(sys.arg) == 2:   # Argument passed should be filename
         filename = sys.arg[1]
+        if not os.path.isfilename(filename):
+            print(filename," does not exist on the system")
+            exit(0)
+        print("Counting words and characters in: ",filename,"\n")
     
     try:
         wordCounter(filename)
