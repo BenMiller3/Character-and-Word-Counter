@@ -6,6 +6,11 @@ By: Benjamin D. Miller
 import sys
 import os
 
+"""
+Takes a file and counts the distict
+words and characters within it
+returns the concatenated string result
+"""
 def wordCounter(filename):
     wordCount = 0
     charCount = 0
